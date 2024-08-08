@@ -133,6 +133,7 @@ const bubbleSort = arr => {
 let arrCreated = [];
 
 const DibujarClick = () => {
+  arrCreated = [];
   const cardCount = document.getElementById("cardAmount").value;
   const numberOfCards = parseInt(cardCount, 10);
   if (!isNaN(numberOfCards) && numberOfCards > 0) {
@@ -154,7 +155,7 @@ const OrdenarClick = () => {
     let newContainer = document.getElementById("sortedCards");
     let newDiv = document.createElement("div");
     let newDivTittle = document.createElement("p");
-    newDivTittle.innerHTML = `Iteracion: ${i}`;
+    newDivTittle.innerHTML = `Iteracion: ${i + 1}`;
     newDiv.id = `Div ${i}`;
     newDiv.className =
       "container-xxl text-center d-flex justify-content-center mx-auto";
